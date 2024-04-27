@@ -26,14 +26,23 @@ class Employee extends Model
 
     public function setFirstNameAttribute($value)
 {
-    $this->attributes['first_name'] = ucfirst($value);
-}
+    $this->attributes['first_name'] = ucfirst(strtolower($value));}
 
     public function setLastNameAttribute($value)
 {
-    $this->attributes['last_name'] = ucfirst($value);
+    $this->attributes['last_name'] = ucfirst(strtolower($value));
 }
 
+public function getFirstNameAttribute($value)
+{
+    return ucfirst(strtolower($value));
+}
+
+// Define an accessor for last_name to ensure proper capitalization
+public function getLastNameAttribute($value)
+{
+    return ucfirst(strtolower($value));
+}
 
 
     public function department()
