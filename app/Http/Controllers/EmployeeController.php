@@ -72,7 +72,7 @@ class EmployeeController extends Controller
     public function show(Employee $id)
 
     {
-        $department=$id->department()->get('department');
+        $department=$id->department()->get('name');
         return response()->json([
             'msg'=>'Employee Details',
             'Employee'=>$id,
@@ -109,9 +109,10 @@ class EmployeeController extends Controller
             $employee->update($EmployeeData);
             DB::commit();
 
+
             return response()->json([
                 'msg'=>'Employee Updated Successfully',
-                'Employee'=>$employee,
+                'Employee'=>$EmployeeData,
 
 
 

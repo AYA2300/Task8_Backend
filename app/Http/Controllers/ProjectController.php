@@ -60,11 +60,11 @@ class ProjectController extends Controller
      */
     public function show(Project $id)
     {
-        $Project=$id->Project()->get('title');
+        $Employee=$id->employees()->get(['first_name']);
         return response()->json([
             'msg'=>'Project Details',
-            'Employee'=>$id,
-            'Project'=>$Project
+            'Employee'=>$Employee,
+            'Project'=>$id
 
         ]);
     }

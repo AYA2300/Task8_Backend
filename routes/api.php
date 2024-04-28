@@ -35,12 +35,12 @@ Route::controller(AuthController::class)->group(function () {
 
 Route::middleware('auth:api')->controller(EmployeeController::class)->group(function () {
     Route::get('employees', 'index');
-    Route::post('store_employees', 'store');
-    Route::get('show_employees/{id}', 'show');
-    Route::put('employees/{id}', 'update');
+    Route::post('store_employee', 'store');
+    Route::get('show_employee/{id}', 'show');
+    Route::put('update_employee/{id}', 'update');
     Route::get('Trash_employees', 'Trash');
     Route::get('restore_employees', 'restore');
-    Route::delete('delete_Permanently', 'deletePermanently');
+    Route::delete('del_EM_Permanently', 'deletePermanently');
     Route::delete('delete_employees/{id}', 'delete');
 });
 
@@ -49,12 +49,12 @@ Route::middleware('auth:api')->controller(EmployeeController::class)->group(func
 
 Route::middleware('auth:api')->controller(DepartmentController::class)->group(function () {
     Route::get('departments', 'index');
-    Route::post('store_departments', 'store');
+    Route::post('store_department', 'store');
     Route::get('show_departments/{id}', 'show');
     Route::put('update_departments/{id}', 'update');
     Route::get('Trash_Department', 'Trash');
     Route::get('restore_Department', 'restore');
-    Route::delete('deletePermanently', 'deletePermanently');
+    Route::delete('delete_DEP_Permanently', 'deletePermanently');
     Route::delete('delete_Department/{id}', 'delete');
 
 });

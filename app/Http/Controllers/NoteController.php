@@ -40,7 +40,7 @@ class NoteController extends Controller
             return response()->json(
                 [
                     'message'=>'Note Added Successfully',
-                    'nots'=>$note
+                    'note'=>$note
 
                 ],200
 
@@ -74,7 +74,7 @@ class NoteController extends Controller
             return response()->json(
                 [
                     'message'=>'Note Added Successfully',
-                    'nots'=>$note
+                    'note'=>$note
 
                 ],200
 

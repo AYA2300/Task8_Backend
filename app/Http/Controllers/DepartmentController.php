@@ -68,11 +68,11 @@ class DepartmentController extends Controller
      */
     public function update(UpdateDepartment $request, Department $department)
     {
-        DB::transaction();
+        DB::beginTransaction();
         $DrpartmentData=[];
         try{
             if(isset($request->name)){
-                $DrpartmentData['first_name'] = $request->first_name;
+                $DrpartmentData['name'] = $request->name;
 
             }
             if(isset($request->description)){
@@ -86,7 +86,7 @@ class DepartmentController extends Controller
 
             return response()->json([
                 'msg'=>'Drpartment Updated Successfully',
-                'Drpartment'=>$department,
+                'Drpartment'=>$DrpartmentData,
 
 
 
