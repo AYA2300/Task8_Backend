@@ -6,13 +6,13 @@
 #4-<h1>Connect to the database</h1>
     <h2>To allow our Laravel application to interact with the newly formed database, we must first establish a connection. To do so, we’ll need to add our database credentials to the .env file:</h2>
 <h3> 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=database name
-DB_USERNAME=root
-DB_PASSWORD=
-</h3>
+DB_CONNECTION=mysql<br>
+DB_HOST=127.0.0.1<br>
+DB_PORT=3306<br/>
+DB_DATABASE=database name<br>
+DB_USERNAME=root<br>
+DB_PASSWORD=<br>
+</h3><br/>
 
 
 #5- <h1>Make the migrations</h1>
@@ -28,3 +28,4 @@ DB_PASSWORD=
 Run the below command to start the Laravel application:</h2>
 
 <h1> php artisan serve</h1>
+
