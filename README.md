@@ -2,7 +2,7 @@
 <h1>Instructions before running the project</h1>
 #1#- <h2>insatll Xampp control panel from  <a href=https://www.apachefriends.org/download.html>Download Xampp</a></h2>
 #2-<h2> Download and run <a href=https://getcomposer.org/Composer-Setup.exe>Composer-Setup.exe</a> - it will install the latest composer version whenever it is executed.  </h2>
-#3-<h2>install VS Vode <a href=https://code.visualstudio.com/Download></a> </h2>
+#3-<h2>install VS Vode <a href=https://code.visualstudio.com/Download>VsCode install</a> </h2>
 #4-<h1>Connect to the database</h1>
     <h2>To allow our Laravel application to interact with the newly formed database, we must first establish a connection. To do so, we’ll need to add our database credentials to the .env file:</h2>
 <h3> 
