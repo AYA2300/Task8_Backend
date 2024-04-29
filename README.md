@@ -1,18 +1,19 @@
 <h2>postman to test api  <a href=https://documenter.getpostman.com/view/26758994/2sA3BuW8rP>Api</a></h2>
 <h1>Instructions before running the project</h1>
-#1- <h2>insatll Xampp control panel from  <a href=https://www.apachefriends.org/download.html>Download Xampp</a></h2>
+#1#- <h2>insatll Xampp control panel from  <a href=https://www.apachefriends.org/download.html>Download Xampp</a></h2>
 #2-<h2> Download and run <a href=https://getcomposer.org/Composer-Setup.exe>Composer-Setup.exe</a> - it will install the latest composer version whenever it is executed.  </h2>
 #3-<h2>install VS Vode <a href=https://code.visualstudio.com/Download></a> </h2>
-#4-Connect to the database
-
-To allow our Laravel application to interact with the newly formed database, we must first establish a connection. To do so, we’ll need to add our database credentials to the .env file:
-
+#4-<h1>Connect to the database</h1>
+    <h2>To allow our Laravel application to interact with the newly formed database, we must first establish a connection. To do so, we’ll need to add our database credentials to the .env file:</h2>
+<h3> 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=database name
 DB_USERNAME=root
 DB_PASSWORD=
+</h3>
+
 
 #5- <h1>Make the migrations</h1>
 
